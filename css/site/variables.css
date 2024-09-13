@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #FFFFFF;
+    --color-secondary: #003F6B;
+    --color-ternary: #002036;
+    --color-accent-beige: #F7F2EC;
+    --color-accent-brown: #A17C68;
+    --color-accent-dark-brown: #6D4C3D;
+    --color-accent-black: #000000;
+    --color-accent-dark-blue: #003F6A;
+    --color-header-bottom: #ffffff5e;
+
+    --shadow-light: rgba(0, 0, 0, 0.2) 0px 8px 12px;
+    --shadow-strong: rgba(149, 157, 165, 0.2) 0px 16px 24px;
+    --shadow-light-text: rgba(0, 0, 0, 0.35) 1px;
+    --shadow-strong-text: rgba(0, 0, 0, 0.35) 1px;
+}

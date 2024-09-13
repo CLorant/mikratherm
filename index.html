@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikratherm Pro Kft.</title>
+
+    <link rel="preload" href="/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/site/styles.css">
+    <link rel="stylesheet" href="./css/baguettebox/baguetteBox.min.css">
+    <link rel="stylesheet" href="./css/font-awesome/fa-611.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container container-fluid">
+                <a href="/">
+                    <img src="./icons/logo-white.svg" alt="logó" class="navbar-brand" width="128" height="64">
+                </a>
+
+                <button class="navbar-toggler closed" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbar-collapse" aria-expanded="false" aria-label="navigation menu" type="button"
+                    onclick="openCloseToggler()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="/">Földmunka Miskolc</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="/generalkivitelezes">Generálkivitelezés</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#referencia">Referencia</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#kapcsolat">Kapcsolat</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-dark-blue-gradient white-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-last pb-4">
+                        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/image/carousel/hero/slider-1.jpg" class="d-block w-100" alt="slider 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/image/carousel/hero/slider-2.jpg" class="d-block w-100" alt="slider 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/image/carousel/hero/slider-3.jpg" class="d-block w-100" alt="slider 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/image/carousel/hero/slider-4.jpg" class="d-block w-100" alt="slider 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/image/carousel/hero/slider-5.jpg" class="d-block w-100" alt="slider 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/image/carousel/hero/slider-6.jpg" class="d-block w-100" alt="slider 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/image/carousel/hero/slider-7.jpg" class="d-block w-100" alt="slider 7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/image/carousel/hero/slider-8.jpg" class="d-block w-100" alt="slider 8">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/image/carousel/hero/slider-9.jpg" class="d-block w-100" alt="slider 9">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                                <i class="fa-regular fa-circle-left fa-2xl"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                                <i class="fa-regular fa-circle-right fa-2xl"></i>
+                            </a>
+
+                            <span class="floating-img">
+                                <img src="./icons/bulldozer.svg" alt="bulldozer">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="pr-3">
+                            <p class="mb-lg-3 mb-2 title">
+                                Tereprendezés profikkal
+                            </p>
+                            <h1 class="mb-lg-5 mb-3 fw-800">
+                                Földmunka Miskolcon és vonzáskörzetében
+                            </h1>
+                            <p class="description mb-lg-4 mb-3">
+                                Ő Bence. Dózer volt a jele az oviban. Fiatal kora ellenére egy igazi tapasztalt profi,
+                                aki
+                                szereti azt, amit csinál. Gondos, szerető gazdája a gépeinek, így azok mindig bevetésre
+                                készen várják az újabb feladatot. A földmunka neki tulajdonképpen játék, így mindig
+                                motiváltan, örömmel végzi a rá bízott feladatot, legyen az munkagödör kiemelés,
+                                nyomvonalas
+                                infrastruktúra építés, sávalap kiszedés vagy bonyolult, közművesített területen történő
+                                feltárás.
+                            </p>
+                            <div class="pt-lg-3 initially-hidden">
+                                <a href="#contact" class="btn contact-button beige">Kapcsolat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages" class="beige mb-xl-5">
+            <div class="container">
+                <p class="title mb-4">
+                    Előnyök
+                </p>
+
+                <h2 class="mb-5">
+                    Miért válasszon minket?
+                </h2>
+
+                <div class="row flex-nowrap mb-5 advantages-container">
+                    <div class="col-lg-3 col-md-6 col-sm-10 mb-2">
+                        <div class="advantages-card h-100">
+                            <div class="mb-2">
+                                <img src="./icons/gripper.svg" alt="ásógép">
+                            </div>
+                            <h3>Fiatal és rendszeresen karbantartott géppark</h3>
+                            <p>Földmunkagépeink átlagéletkora 2-3 év, így nem kell tartania a váratlan meghibásodástól,
+                                munkaidő kieséstől. Gépeink minden munkavégzés előtt ellenőrzésen és zsírzáson mennek
+                                át.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 mb-2">
+                        <div class="advantages-card h-100">
+                            <div class="mb-2">
+                                <img src="./icons/calendar.svg" alt="naptár">
+                            </div>
+                            <h3>Munkakezdés akár 3 napon belül</h3>
+                            <p>Nem kell hetekig várnia a földmunka elkészültére, rugalmasan igazodunk terveihez,
+                                munkaszervezéssel és a munkaeszközök jó megválasztásával.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 mb-2">
+                        <div class="advantages-card h-100">
+                            <div class="mb-2">
+                                <img src="./icons/hard-hat.svg" alt="keménykalap">
+                            </div>
+                            <h3>Betartjuk a munkavédelmi szabályokat</h3>
+                            <p>Képzett munkatársaink, modern felszereléseink segítségével minden projektet hatékonyan és
+                                a
+                                munkavédelmi szabályoknak megfelelően hajtunk végre. Minden gépünk rendelkezik az előírt
+                                vizsgálatokkal, jegyzőkönyvekkel.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 mb-2 ">
+                        <div class="advantages-card h-100">
+                            <div class="mb-2">
+                                <img src="./icons/people.svg" alt="emberek">
+                            </div>
+                            <h3>Tettre-kész szakértő csapat</h3>
+                            <p>Csapatunk 10 éves tapasztalattal rendelkezik a földmunka területén, és képes megoldani
+                                akár a legnehezebb kihívásokat is.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="d-flex justify-content-center container-fluid px-3 px-xl-5 divider">
+            <img src="./image/site/divider.jpg" class="divider" alt="divider">
+        </div>
+
+        <section id="services">
+            <div class="container">
+                <p class="title mb-4 text-center">
+                    Szolgáltatások
+                </p>
+                <h2 class="mb-5 text-center">
+                    Munkakezdés akár <br> 3 napon belül
+                </h2>
+
+                <div class="row services-container">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <div class="services-card">
+                            <img src="./image/site/dirt-transport.png" alt="földszállitas">
+                            <h3 class="mt-1 mt-lg-3">Kitermelt föld elszállítása</h3>
+                            <p class="mb-1 mb-lg-5">Szakértő csapatunk nemcsak a földmunka feladatait végzi el, hanem
+                                biztosítja a kitermelt föld ártalmatlan elszállítását és újrahasznosítását is.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <div class="services-card">
+                            <img src="./image/site/hole-digging.png" alt="árokásás">
+                            <h3 class="mt-1 mt-lg-3">Árokásás</h3>
+                            <p class="mb-1 mb-lg-5">Legyen szó víz-, gáz-, csatorna- vagy elektromos vezeték
+                                nyomvonaláról, mi garantáljuk a pontos és hatékony munkavégzést.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <div class="services-card">
+                            <img src="./image/site/parking-lot.png" alt="parkoló">
+                            <h3 class="mt-1 mt-lg-3">Parkoló építése, tereprendezés</h3>
+                            <p class="mb-1 mb-lg-5">Minden részletre odafigyelünk, hogy a parkoló tökéletesen
+                                illeszkedjen az épülethez vagy telephelyhez.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <div class="services-card">
+                            <img src="./image/site/construction-worker.png" alt="építőipari dolgozók">
+                            <h3 class="mt-1 mt-lg-3">Építési terület előkészítése</h3>
+                            <p class="mb-1 mb-lg-5">Csapatunk készen áll arra, hogy a legjobb minőségű szolgáltatást
+                                nyújtsa az építési terület előkészítése során.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <div class="services-card">
+                            <img src="./image/site/wine-cellar.png" alt="pince">
+                            <h3 class="mt-1 mt-lg-3">Pincetömb kiemelés</h3>
+                            <p class="mb-1 mb-lg-5">Csapatunk új gépparkkal végzi a pincetömbök kiemelését, szükség
+                                esetén a kiemelés során felszínre kerülő sitt, törmeléket is elszállítjuk.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <div class="services-card">
+                            <img src="./image/site/excavator-action.png" alt="kotrógép">
+                            <h3 class="mt-1 mt-lg-3">Területfeltöltés</h3>
+                            <p class="mb-1 mb-lg-5">Az általunk végzett területfeltöltés hatékonyan javítja a terület
+                                hasznosíthatóságát, és megoldást nyújt a domborzati problémákra.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <div class="services-card">
+                            <img src="./image/site/mini-excavator.png" alt="bobcat">
+                            <h3 class="mt-1 mt-lg-3">Bobcat bérlés</h3>
+                            <p class="mb-1 mb-lg-5">Modern és jól karbantartott gépparkunkkal, tapasztalt
+                                operátorainkkal biztosítjuk a szükséges berendezéseket és szakembereket a projektje
+                                sikeréhez.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <div class="services-card">
+                            <img src="./image/site/plastering.png" alt="vakolás">
+                            <h3 class="mt-1 mt-lg-3">Generálkivitelezés</h3>
+                            <p class="mb-1 mb-lg-5">Nálunk biztos kézben van a kivitelezése! Generálkivitelezővel az
+                                építés folyamata egyszerűbb és kényelmesebbé válik az Ön számára.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="machines" class="bg-brown-gradient white-text">
+            <div class="container">
+                <p class="title mb-4 text-center">
+                    Géppark
+                </p>
+                <h2 class="mb-5 text-center">
+                    Megbízható és hatékony géppark földmunkákhoz
+                </h2>
+                <div id="machinesCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="/image/carousel/machines/slider-1.jpg" class="machine-img" alt="slider 1">
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-5 machine-description white">
+                                        <h3 class="mb-3">LiuGong 777A kotró-rakodó gép</h3>
+                                        <p class="mb-3">
+                                            A LiuGong 777A kotró-rakodó gép az egyik legkiválóbb választás
+                                            azoknak, akik hatékony, erős és megbízható gépre vágynak 200m+ telkek
+                                            kiépítésére. Az erős, ám kényelmesen kezelhető gép ideális megoldás nagyobb
+                                            területek (pl. csarnokok) kiépítésére. A LiuGong 777A gép erőteljes motorral
+                                            és nagy kapacitású rakodókanállal rendelkezik, ami lehetővé teszi a 100
+                                            köbméter rakodást naponta. Gépkezelővel együtt bérelhető.
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>Gépi földmunka Miskolcon</p>
+                                            <p>már <b>9 490 Ft-tól</b></p>
+                                        </div>
+                                        <div class="initially-hidden">
+                                            <a href="#contact" class="btn contact-button brown">Kapcsolat</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="/image/carousel/machines/slider-2.jpg" class="machine-img" alt="slider 2">
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-5 machine-description white">
+                                        <h3 class="mb-3">LiuGong 777A kotró-rakodó gép</h3>
+                                        <p class="mb-3">
+                                            A LiuGong 777A kotró-rakodó gép az egyik legkiválóbb választás
+                                            azoknak, akik hatékony, erős és megbízható gépre vágynak 200m+ telkek
+                                            kiépítésére. Az erős, ám kényelmesen kezelhető gép ideális megoldás nagyobb
+                                            területek (pl. csarnokok) kiépítésére. A LiuGong 777A gép erőteljes motorral
+                                            és nagy kapacitású rakodókanállal rendelkezik, ami lehetővé teszi a 100
+                                            köbméter rakodást naponta. Gépkezelővel együtt bérelhető.
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>Gépi földmunka Miskolcon</p>
+                                            <p>már <b>9 490 Ft-tól</b></p>
+                                        </div>
+                                        <div class="initially-hidden">
+                                            <a href="#contact" class="btn contact-button brown">Kapcsolat</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#machinesCarousel" role="button" data-slide="prev">
+                        <i class="fa-regular fa-circle-left fa-2xl"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#machinesCarousel" role="button" data-slide="next">
+                        <i class="fa-regular fa-circle-right fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="row mb-lg-5">
+                    <div class="col-12 col-lg-6 order-lg-last">
+                        <img src="./image/site/excavator-lifting.png" class="d-block w-100" alt="kotrógép földet emel">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="pr-lg-5">
+                            <p class="title mb-4">
+                                Cégünkről
+                            </p>
+                            <h2 class="mb-5">
+                                Mikratherm-Pro Földmunka Miskolc
+                            </h2>
+                            <p>
+                                Építkezések, útépítések, kertépítések és más építészeti projektek során egy jól képzett
+                                és
+                                tapasztalt földmunka szakértő csapat elengedhetetlen a sikeres projekt végrehajtásához.
+                                Képzett munkatársaink, modern technológiánk és felszereléseink segítségével minden
+                                projektet
+                                hatékonyan és biztonságosan hajtunk végre. Cégünk több mint 5 éve foglalkozik
+                                földmunkával
+                                Miskolcon és vonzáskörzetében.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-dark-blue-gradient text-center text-white">
+                    <div class="row p-lg-5">
+                        <div class="col-4">
+                            <h2>5 év</h2>
+                            <p>szakmai tapasztalat</p>
+                        </div>
+                        <div class="col-4">
+                            <h2>600 milliós</h2>
+                            <p>árbevétel</p>
+                        </div>
+                        <div class="col-4">
+                            <h2>40</h2>
+                            <p>elégedett ügyfél</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="workflow" class="beige">
+            <div class="container">
+                <p class="title mb-4 text-center">
+                    Munkafolyamat
+                </p>
+                <h2 class="mb-4 text-center">
+                    Hogyan dolgozunk?
+                </h2>
+                <div class="d-flex justify-content-center mb-5">
+                    <button id="workflow-0" class="btn workflow-btn dark-brown" onclick="changeWorkflow(this.id)"
+                        value="0" data-target="#workflowCarousel" data-slide-to="0" aria-current="true"
+                        aria-label="Slide 1" type="button">
+                        1. Kapcsolatfelvétel
+                    </button>
+                    <button id="workflow-1" class="btn workflow-btn white" onclick="changeWorkflow(this.id)" value="1"
+                        data-target="#workflowCarousel" data-slide-to="1" aria-label="Slide 2" type="button">
+                        2. Árajánlat&nbsp;küldése
+                    </button>
+                    <button id="workflow-2" class="btn workflow-btn white" onclick="changeWorkflow(this.id)" value="2"
+                        data-target="#workflowCarousel" data-slide-to="2" aria-label="Slide 3" type="button">
+                        3. Munka megkezdése
+                    </button>
+                </div>
+
+                <div id="workflowCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <img src="/image/carousel/workflow/slider-1.jpg" class="workflow-img"
+                                        alt="slider 1">
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="p-5 white h-100">
+                                        <h3 class="mt-4 mb-3">Kapcsolatfelvétel</h3>
+                                        <p>
+                                            A telefonos megkeresését követően 24 órán belül felvesszük Önnel a
+                                            kapcsolatot, egyeztetünk egy időpontot felmérésre.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <img src="/image/carousel/workflow/slider-2.jpg" class="workflow-img"
+                                        alt="slider 1">
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="p-5 white h-100">
+                                        <h3 class="mt-4 mb-3">Árajánlat&nbsp;küldése</h3>
+                                        <p>
+                                            A felmérést követően részletes árajánlatot küldünk e-mailen, amely minden
+                                            fontos információt tartalmaz, amely a munka megkezdéséhez szükséges.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <img src="/image/carousel/workflow/slider-3.jpg" class="workflow-img"
+                                        alt="slider 1">
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="p-5 white h-100">
+                                        <h3 class="mt-4 mb-3">Munka&nbsp;megkezdése</h3>
+                                        <p>
+                                            Az ajánlat elfogadását követően átbeszéljük a helyszínen a
+                                            munkafolyamatokat, és elkezdjük a munkát.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev dark" href="#workflowCarousel" onclick="stepWorkflow(-1)" role="button" data-slide="prev">
+                        <i class="fa-regular fa-circle-left fa-2xl black-text"></i>
+                    </a>
+                    <a class="carousel-control-next dark" href="#workflowCarousel" onclick="stepWorkflow(1)" role="button" data-slide="next">
+                        <i class="fa-regular fa-circle-right fa-2xl black-text"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+
+                    </div>
+                    <div class="col-lg-6">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                
+            </div>
+            <hr>
+            <p class="text-center">Copyright © 2023 Mikatherm Kft. Minden jog fenntartva</p>
+        </div>
+    </footer>
+
+    <script src="./js/site/scripts.js"></script>
+    <script src="./js/bootstrap/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap/popper.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/baguettebox/baguetteBox.min.js"></script>
+</body>
+
+</html>
