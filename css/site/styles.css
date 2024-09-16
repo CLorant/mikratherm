@@ -107,6 +107,10 @@ a, p, span {
     background-color: transparent;
 }
 
+.bg-blue {
+    background-color: var(--color-secondary);
+}
+
 .bg-dark-blue {
     background-color: var(--color-ternary);
 }
@@ -330,15 +334,45 @@ header {
     object-fit: cover;
 }
 
-#kepek {
+#gallery {
     display: flex;
     justify-content: center;
 }
 
-#kepek img {
+#gallery img {
     border-radius: 0;
     width: 20%;
     aspect-ratio: 1 / 1;
+}
+
+.form-control {
+    background: transparent;
+    border-radius: 0;
+    border: 1px solid var(--color-primary);
+}
+
+.form-control::placeholder {
+    color: var(--color-primary);
+}
+
+.form-control:focus {
+    background-color: var(--color-secondary);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    accent-color: var(--color-primary);
+}
+
+#message {
+    min-height: 92px;
 }
 
 @media (min-width: 360px) {

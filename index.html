@@ -509,10 +509,102 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-
+                        <p class="title mb-4">
+                            MIKRATHERM-PRO FÖLDMUNKA MISKOLC
+                        </p>
+                        <h2 class="mb-4">
+                            Kapcsolat
+                        </h2>
+                        <p class="mb-4">
+                            A megkeresését követően 24 órán belül felvesszük Önnel a kapcsolatot, egyeztetünk egy időpontot felmérésre.
+                        </p>
+                        <div class="my-3">
+                            <img src="./icons/phone.svg" class="mr-2 bg-blue rounded-circle" alt="telefon">
+                            <span>+36 30 123 4567</span>
+                        </div>
+                        <div class="my-3">
+                            <img src="./icons/email.svg" class="mr-2 bg-blue rounded-circle" alt="email">
+                            <span>info@mikratherm.hu</span>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-
+                    <div class="col-lg-6 p-5 bg-dark-blue-gradient">
+                        <form action="send" class="white-text">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Név" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="phone" class="form-control" id="phone" placeholder="Telefon" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="place" placeholder="Munkavégzés helye" required>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="localWork" name="residentClient" required>
+                                        <label for="residentClient" class="form-check-label">Lakossági</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="companyWork" name="companyClient" required>
+                                        <label for="companyClient" class="form-check-label">Céges</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <p>Elvégzendő feladat</p>
+                                </div>
+                                <div class="col-6 col-xl-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="earthWork" name="workType" checked>
+                                        <label for="earthWork" class="form-check-label">Földmunka</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="landscaping" name="workType">
+                                        <label for="landscaping" class="form-check-label">Tereprendezés</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="ditchDigging" name="workType">
+                                        <label for="ditchDigging" class="form-check-label">Árokásás</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="utilConstruct" name="workType">
+                                        <label for="utilConstruct" class="form-check-label">Közmű&nbsp;kiépítés</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="otherWork" name="workType">
+                                        <label for="otherWork" class="form-check-label">Egyéb</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-5">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control" placeholder="Üzenet"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-right">
+                                    <button class="btn contact-button beige">Ajánlatkérés</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -520,10 +612,21 @@
 
     </main>
 
-    <footer>
+    <footer class="beige">
         <div class="container-fluid">
             <div class="container">
-                
+                <div class="d-flex justify-content-between align-items-center flex-md-row p-2">
+                    <div>
+                        <img src="./icons/logo.png" class="img-fluid" alt="logó">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <a href="/" class="black-text p-1">Földmunka</a>
+                        <a href="/generalkivitelezes" class="black-text p-1">Generálkivitelezés</a>
+                        <a href="#referencia" class="black-text p-1">Referencia</a>
+                        <a href="#kapcsolat" class="black-text p-1">Kapcsolat</a>
+                    </div>
+                   
+                </div>
             </div>
             <hr>
             <p class="text-center">Copyright © 2023 Mikatherm Kft. Minden jog fenntartva</p>
