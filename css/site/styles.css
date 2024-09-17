@@ -334,41 +334,49 @@ header {
     object-fit: cover;
 }
 
-#gallery {
-    display: flex;
-    justify-content: center;
+#gallery .container-fluid {
+    max-width: 1920px;
 }
 
-#gallery img {
-    border-radius: 0;
-    width: 20%;
-    aspect-ratio: 1 / 1;
+.gallery-img {
+    aspect-ratio: 1.17;
+}
+
+input {
+    border: 1px solid var(--color-primary);
 }
 
 .form-control {
     background: transparent;
     border-radius: 0;
-    border: 1px solid var(--color-primary);
-}
-
-.form-control::placeholder {
-    color: var(--color-primary);
 }
 
 .form-control:focus {
     background-color: var(--color-secondary);
 }
 
+.form-control,
+.form-control:focus,
+.form-control::placeholder {
+    color: var(--color-primary);
+}
+
+input[type="radio"] {
+    border-radius: 100%;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
     width: 18px;
     height: 18px;
-    background-color: transparent;
+    appearance: none;
 }
 
 input[type="radio"]:checked,
 input[type="checkbox"]:checked {
     accent-color: var(--color-primary);
+    background-color: transparent;
+    appearance: radio;
 }
 
 #message {

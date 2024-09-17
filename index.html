@@ -295,10 +295,10 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col-6">
-                                    <img src="/image/carousel/machines/slider-1.jpg" class="machine-img" alt="slider 1">
+                                <div class="col-11 col-lg-6 mx-auto">
+                                    <img src="/image/carousel/machines/slider-1.jpg" class="machine-img h-100" alt="slider 1">
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-lg-6">
                                     <div class="p-5 machine-description white">
                                         <h3 class="mb-3">LiuGong 777A kotró-rakodó gép</h3>
                                         <p class="mb-3">
@@ -322,10 +322,10 @@
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-11 col-lg-6 mx-auto">
                                     <img src="/image/carousel/machines/slider-2.jpg" class="machine-img" alt="slider 2">
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-lg-6">
                                     <div class="p-5 machine-description white">
                                         <h3 class="mb-3">LiuGong 777A kotró-rakodó gép</h3>
                                         <p class="mb-3">
@@ -388,7 +388,7 @@
                 </div>
 
                 <div class="bg-dark-blue-gradient text-center text-white">
-                    <div class="row p-lg-5">
+                    <div class="row p-3 p-lg-5">
                         <div class="col-4">
                             <h2>5 év</h2>
                             <p>szakmai tapasztalat</p>
@@ -415,7 +415,7 @@
                 <h2 class="mb-4 text-center">
                     Hogyan dolgozunk?
                 </h2>
-                <div class="d-flex justify-content-center mb-5">
+                <div class="d-flex justify-content-center flex-wrap mb-5">
                     <button id="workflow-0" class="btn workflow-btn dark-brown" onclick="changeWorkflow(this.id)"
                         value="0" data-target="#workflowCarousel" data-slide-to="0" aria-current="true"
                         aria-label="Slide 1" type="button">
@@ -499,15 +499,57 @@
             </div>
         </section>
 
-        <section id="gallery">
-            <div class="container">
-                
+        <section id="gallery" class="px-5">
+            <div class="container-fluid">
+                <div id="galleryCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row gx-1">
+                                <div class="col-3">
+                                    <img src="./image/carousel/gallery/slider-1.1.png" class="img-fluid h-100 gallery-img" alt="slider-1.1">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./image/carousel/gallery/slider-1.2.png" class="img-fluid h-100 gallery-img" alt="slider-1.2">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./image/carousel/gallery/slider-1.3.png" class="img-fluid h-100 gallery-img" alt="slider-1.3">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./image/carousel/gallery/slider-1.4.png" class="img-fluid h-100 gallery-img" alt="slider-1.4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row gx-1">
+                                <div class="col-3">
+                                    <img src="./image/carousel/gallery/slider-1.1.png" class="img-fluid gallery-img" alt="slider-2.1">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./image/carousel/gallery/slider-1.2.png" class="img-fluid gallery-img" alt="slider-2.2">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./image/carousel/gallery/slider-1.3.png" class="img-fluid gallery-img" alt="slider-2.3">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./image/carousel/gallery/slider-1.4.png" class="img-fluid gallery-img" alt="slider-2.4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev dark" href="#galleryCarousel" role="button" data-slide="prev">
+                        <i class="fa-regular fa-circle-left fa-2xl black-text"></i>
+                    </a>
+                    <a class="carousel-control-next dark" href="#galleryCarousel" role="button" data-slide="next">
+                        <i class="fa-regular fa-circle-right fa-2xl black-text"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-6">
                         <p class="title mb-4">
                             MIKRATHERM-PRO FÖLDMUNKA MISKOLC
@@ -550,49 +592,49 @@
                                         <input type="text" class="form-control" id="place" placeholder="Munkavégzés helye" required>
                                     </div>
                                 </div>
-                                <div class="col-6 col-lg-4">
+                                <div class="col-6 col-lg-4 py-3">
                                     <div class="form-check">
-                                        <input type="radio" class="form-check-input" id="localWork" name="residentClient" required>
-                                        <label for="residentClient" class="form-check-label">Lakossági</label>
+                                        <input type="radio" class="form-check-input" id="residentClient" name="clientType" required>
+                                        <label for="residentClient" class="form-check-label ml-2">Lakossági</label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-lg-4">
+                                <div class="col-6 col-lg-4 py-3">
                                     <div class="form-check">
-                                        <input type="radio" class="form-check-input" id="companyWork" name="companyClient" required>
-                                        <label for="companyClient" class="form-check-label">Céges</label>
+                                        <input type="radio" class="form-check-input" id="companyClient" name="clientType" required>
+                                        <label for="companyClient" class="form-check-label ml-2">Céges</label>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 pt-4">
                                     <p>Elvégzendő feladat</p>
                                 </div>
                                 <div class="col-6 col-xl-4">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="earthWork" name="workType" checked>
-                                        <label for="earthWork" class="form-check-label">Földmunka</label>
+                                        <label for="earthWork" class="form-check-label ml-2">Földmunka</label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-xl-4">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="landscaping" name="workType">
-                                        <label for="landscaping" class="form-check-label">Tereprendezés</label>
+                                        <label for="landscaping" class="form-check-label ml-2">Tereprendezés</label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-xl-4">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="ditchDigging" name="workType">
-                                        <label for="ditchDigging" class="form-check-label">Árokásás</label>
+                                        <label for="ditchDigging" class="form-check-label ml-2">Árokásás</label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-xl-4">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="utilConstruct" name="workType">
-                                        <label for="utilConstruct" class="form-check-label">Közmű&nbsp;kiépítés</label>
+                                        <label for="utilConstruct" class="form-check-label ml-2">Közmű&nbsp;kiépítés</label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-xl-4">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="otherWork" name="workType">
-                                        <label for="otherWork" class="form-check-label">Egyéb</label>
+                                        <label for="otherWork" class="form-check-label ml-2">Egyéb</label>
                                     </div>
                                 </div>
                                 <div class="col-12 mt-5">
