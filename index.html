@@ -19,35 +19,65 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav class="navbar navbar-dark navbar-expand-lg">
-            <div class="container container-fluid">
+    <div id="sidebar" class="white-text closed">
+        <div class="toggler-container bg-dark-brown">
+            <button id="mobile-toggler" class="navbar-toggler closed" type="button" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <ul class="navbar-nav py-3 mx-4 text-right">
+            <li class="nav-item py-2">
+                <a class="nav-link mobile-nav-link title brown-text" href="/" onclick="closeNavbar()">Főoldal</a>
+            </li>
+            <li class="nav-item py-2">
+                <a class="nav-link mobile-nav-link title brown-text" href="/generalkivitelezes" onclick="closeNavbar()">Generálkivitelezés</a>
+            </li>
+            <li class="nav-item py-2">
+                <a class="nav-link mobile-nav-link title brown-text" href="#gallery" onclick="closeNavbar()">Referencia</a>
+            </li>
+            <li class="nav-item py-2">
+                <a class="nav-link mobile-nav-link title brown-text" href="#contact" onclick="closeNavbar()">Kapcsolat</a>
+            </li>
+        </ul>
+        <h2>Sidebar Content</h2>
+    </div>
+    <div id="dark-mobile-bg" class="invisible" onclick="closeNavbar()"></div>
+    <header>
+        <nav id="mobile-nav" class="navbar bg-white">
+            <div class="container-fluid">
                 <a href="/">
-                    <img src="./icons/logo-white.svg" alt="logó" class="navbar-brand" width="128" height="64">
+                    <img src="./icons/logo.png" alt="logó" class="navbar-brand" width="128" height="64">
                 </a>
-
-                <button class="navbar-toggler closed" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbar-collapse" aria-expanded="false" aria-label="navigation menu" type="button"
-                    onclick="openCloseToggler()">
+                <button class="navbar-toggler closed" type="button" onclick="toggleSidebar()">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
+            </div>
+        </nav>
+        <nav id="desktop-nav" class="navbar navbar-expand-lg">
+            <div class="container container-fluid">
+                <a href="/">
+                    <img src="./icons/logo-white.svg" alt="logó" class="navbar-brand" width="128" height="64">
+                </a>
 
                 <div class="collapse navbar-collapse justify-content-end">
                     <ul class="navbar-nav">
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="/">Földmunka Miskolc</a>
+                            <a class="nav-link desktop-nav-link" href="/">Földmunka Miskolc</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="/generalkivitelezes">Generálkivitelezés</a>
+                            <a class="nav-link desktop-nav-link" href="/generalkivitelezes">Generálkivitelezés</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#referencia">Referencia</a>
+                            <a class="nav-link desktop-nav-link" href="#gallery">Referencia</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#kapcsolat">Kapcsolat</a>
+                            <a class="nav-link desktop-nav-link" href="#contact">Kapcsolat</a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +89,7 @@
         <section id="hero" class="bg-dark-blue-gradient white-text">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 order-lg-last pb-4">
+                    <div class="col-md-6 order-md-last pb-4 my-md-auto">
                         <div id="heroCarousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -91,10 +121,10 @@
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-                                <i class="fa-regular fa-circle-left fa-2xl"></i>
+                                <i class="fa-regular fa-circle-left"></i>
                             </a>
                             <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-                                <i class="fa-regular fa-circle-right fa-2xl"></i>
+                                <i class="fa-regular fa-circle-right"></i>
                             </a>
 
                             <span class="floating-img">
@@ -103,12 +133,12 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="pr-3">
+                    <div class="col-md-6">
+                        <div class="pr-0 pr-lg-4">
                             <p class="mb-lg-3 mb-2 title">
                                 Tereprendezés profikkal
                             </p>
-                            <h1 class="mb-lg-5 mb-3 fw-800">
+                            <h1 class="mb-lg-5 mb-3">
                                 Földmunka Miskolcon és vonzáskörzetében
                             </h1>
                             <p class="description mb-lg-4 mb-3">
@@ -140,9 +170,9 @@
                     Miért válasszon minket?
                 </h2>
 
-                <div class="row flex-nowrap mb-5 advantages-container">
-                    <div class="col-lg-3 col-md-6 col-sm-10 mb-2">
-                        <div class="advantages-card h-100">
+                <div class="row flex-nowrap mb-5 pb-2 advantages-container">
+                    <div class="col-lg-3 col-md-6 col-sm-10 col-8 mb-2 px-2">
+                        <div class="advantages-card p-3 p-md-4 h-100">
                             <div class="mb-2">
                                 <img src="./icons/gripper.svg" alt="ásógép">
                             </div>
@@ -155,7 +185,7 @@
 
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-10 mb-2">
-                        <div class="advantages-card h-100">
+                        <div class="advantages-card p-3 p-md-4 h-100">
                             <div class="mb-2">
                                 <img src="./icons/calendar.svg" alt="naptár">
                             </div>
@@ -166,7 +196,7 @@
 
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-10 mb-2">
-                        <div class="advantages-card h-100">
+                        <div class="advantages-card p-3 p-md-4 h-100">
                             <div class="mb-2">
                                 <img src="./icons/hard-hat.svg" alt="keménykalap">
                             </div>
@@ -179,7 +209,7 @@
 
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-10 mb-2 ">
-                        <div class="advantages-card h-100">
+                        <div class="advantages-card p-3 p-md-4 h-100">
                             <div class="mb-2">
                                 <img src="./icons/people.svg" alt="emberek">
                             </div>
@@ -296,7 +326,8 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-11 col-lg-6 mx-auto">
-                                    <img src="/image/carousel/machines/slider-1.jpg" class="machine-img h-100" alt="slider 1">
+                                    <img src="/image/carousel/machines/slider-1.jpg" class="machine-img w-100 h-100"
+                                        alt="slider 1">
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <div class="p-5 machine-description white">
@@ -323,7 +354,8 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-11 col-lg-6 mx-auto">
-                                    <img src="/image/carousel/machines/slider-2.jpg" class="machine-img" alt="slider 2">
+                                    <img src="/image/carousel/machines/slider-2.jpg" class="machine-img w-100 h-100"
+                                        alt="slider 2">
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <div class="p-5 machine-description white">
@@ -350,10 +382,10 @@
                     </div>
 
                     <a class="carousel-control-prev" href="#machinesCarousel" role="button" data-slide="prev">
-                        <i class="fa-regular fa-circle-left fa-2xl"></i>
+                        <i class="fa-regular fa-circle-left"></i>
                     </a>
                     <a class="carousel-control-next" href="#machinesCarousel" role="button" data-slide="next">
-                        <i class="fa-regular fa-circle-right fa-2xl"></i>
+                        <i class="fa-regular fa-circle-right"></i>
                     </a>
                 </div>
             </div>
@@ -362,12 +394,12 @@
         <section id="about">
             <div class="container">
                 <div class="row mb-lg-5">
-                    <div class="col-12 col-lg-6 order-lg-last">
+                    <div class="col-md-6 order-md-last my-md-auto">
                         <img src="./image/site/excavator-lifting.png" class="d-block w-100" alt="kotrógép földet emel">
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-md-6">
                         <div class="pr-lg-5">
-                            <p class="title mb-4">
+                            <p class="title mb-2 mb-md-4 mt-3 mt-md-0">
                                 Cégünkről
                             </p>
                             <h2 class="mb-5">
@@ -389,15 +421,15 @@
 
                 <div class="bg-dark-blue-gradient text-center text-white">
                     <div class="row p-3 p-lg-5">
-                        <div class="col-4">
+                        <div class="col-4 col-md-12">
                             <h2>5 év</h2>
                             <p>szakmai tapasztalat</p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 col-md-12">
                             <h2>600 milliós</h2>
                             <p>árbevétel</p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 col-md-12">
                             <h2>40</h2>
                             <p>elégedett ügyfél</p>
                         </div>
@@ -415,19 +447,19 @@
                 <h2 class="mb-4 text-center">
                     Hogyan dolgozunk?
                 </h2>
-                <div class="d-flex justify-content-center flex-wrap mb-5">
-                    <button id="workflow-0" class="btn workflow-btn dark-brown" onclick="changeWorkflow(this.id)"
-                        value="0" data-target="#workflowCarousel" data-slide-to="0" aria-current="true"
-                        aria-label="Slide 1" type="button">
-                        1. Kapcsolatfelvétel
+                <div class="d-flex justify-content-start justify-content-md-center mb-2 mb-lg-5 overflow-auto">
+                    <button id="workflow-0" class="workflow-btn dark-brown" onclick="changeWorkflow(this.id)" value="0"
+                        data-target="#workflowCarousel" data-slide-to="0" aria-current="true" aria-label="Slide 1"
+                        type="button">
+                        1.&nbsp;Kapcsolatfelvétel
                     </button>
-                    <button id="workflow-1" class="btn workflow-btn white" onclick="changeWorkflow(this.id)" value="1"
+                    <button id="workflow-1" class="workflow-btn white" onclick="changeWorkflow(this.id)" value="1"
                         data-target="#workflowCarousel" data-slide-to="1" aria-label="Slide 2" type="button">
-                        2. Árajánlat&nbsp;küldése
+                        2.&nbsp;Árajánlat&nbsp;küldése
                     </button>
-                    <button id="workflow-2" class="btn workflow-btn white" onclick="changeWorkflow(this.id)" value="2"
+                    <button id="workflow-2" class="workflow-btn white" onclick="changeWorkflow(this.id)" value="2"
                         data-target="#workflowCarousel" data-slide-to="2" aria-label="Slide 3" type="button">
-                        3. Munka megkezdése
+                        3.&nbsp;Munka&nbsp;megkezdése
                     </button>
                 </div>
 
@@ -489,60 +521,41 @@
                         </div>
                     </div>
 
-                    <a class="carousel-control-prev dark" href="#workflowCarousel" onclick="stepWorkflow(-1)" role="button" data-slide="prev">
-                        <i class="fa-regular fa-circle-left fa-2xl black-text"></i>
+                    <a class="carousel-control-prev dark" href="#workflowCarousel" onclick="stepWorkflow(-1)"
+                        role="button" data-slide="prev">
+                        <i class="fa-regular fa-circle-left black-text"></i>
                     </a>
-                    <a class="carousel-control-next dark" href="#workflowCarousel" onclick="stepWorkflow(1)" role="button" data-slide="next">
-                        <i class="fa-regular fa-circle-right fa-2xl black-text"></i>
+                    <a class="carousel-control-next dark" href="#workflowCarousel" onclick="stepWorkflow(1)"
+                        role="button" data-slide="next">
+                        <i class="fa-regular fa-circle-right black-text"></i>
                     </a>
                 </div>
             </div>
         </section>
 
         <section id="gallery" class="px-5">
-            <div class="container-fluid">
-                <div id="galleryCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row gx-1">
-                                <div class="col-3">
-                                    <img src="./image/carousel/gallery/slider-1.1.png" class="img-fluid h-100 gallery-img" alt="slider-1.1">
-                                </div>
-                                <div class="col-3">
-                                    <img src="./image/carousel/gallery/slider-1.2.png" class="img-fluid h-100 gallery-img" alt="slider-1.2">
-                                </div>
-                                <div class="col-3">
-                                    <img src="./image/carousel/gallery/slider-1.3.png" class="img-fluid h-100 gallery-img" alt="slider-1.3">
-                                </div>
-                                <div class="col-3">
-                                    <img src="./image/carousel/gallery/slider-1.4.png" class="img-fluid h-100 gallery-img" alt="slider-1.4">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row gx-1">
-                                <div class="col-3">
-                                    <img src="./image/carousel/gallery/slider-1.1.png" class="img-fluid gallery-img" alt="slider-2.1">
-                                </div>
-                                <div class="col-3">
-                                    <img src="./image/carousel/gallery/slider-1.2.png" class="img-fluid gallery-img" alt="slider-2.2">
-                                </div>
-                                <div class="col-3">
-                                    <img src="./image/carousel/gallery/slider-1.3.png" class="img-fluid gallery-img" alt="slider-2.3">
-                                </div>
-                                <div class="col-3">
-                                    <img src="./image/carousel/gallery/slider-1.4.png" class="img-fluid gallery-img" alt="slider-2.4">
-                                </div>
-                            </div>
-                        </div>
+            <div class="container container-fluid">
+                <div class="row gallery-container">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <img src="./image/carousel/gallery/slider-1.png" class="img-fluid h-100 gallery-img"
+                            alt="slider-1">
                     </div>
-
-                    <a class="carousel-control-prev dark" href="#galleryCarousel" role="button" data-slide="prev">
-                        <i class="fa-regular fa-circle-left fa-2xl black-text"></i>
-                    </a>
-                    <a class="carousel-control-next dark" href="#galleryCarousel" role="button" data-slide="next">
-                        <i class="fa-regular fa-circle-right fa-2xl black-text"></i>
-                    </a>
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <img src="./image/carousel/gallery/slider-2.png" class="img-fluid h-100 gallery-img"
+                            alt="slider-2">
+                    </div>
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <img src="./image/carousel/gallery/slider-3.png" class="img-fluid h-100 gallery-img"
+                            alt="slider-3">
+                    </div>
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <img src="./image/carousel/gallery/slider-4.png" class="img-fluid h-100 gallery-img"
+                            alt="slider-4">
+                    </div>
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <img src="./image/carousel/gallery/slider-4.png" class="img-fluid h-100 gallery-img"
+                            alt="slider-4">
+                    </div>
                 </div>
             </div>
         </section>
@@ -558,7 +571,8 @@
                             Kapcsolat
                         </h2>
                         <p class="mb-4">
-                            A megkeresését követően 24 órán belül felvesszük Önnel a kapcsolatot, egyeztetünk egy időpontot felmérésre.
+                            A megkeresését követően 24 órán belül felvesszük Önnel a kapcsolatot, egyeztetünk egy
+                            időpontot felmérésre.
                         </p>
                         <div class="my-3">
                             <img src="./icons/phone.svg" class="mr-2 bg-blue rounded-circle" alt="telefon">
@@ -579,28 +593,33 @@
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <input type="email" class="form-control" id="email" placeholder="Email"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group">
-                                        <input type="phone" class="form-control" id="phone" placeholder="Telefon" required>
+                                        <input type="phone" class="form-control" id="phone" placeholder="Telefon"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="place" placeholder="Munkavégzés helye" required>
+                                        <input type="text" class="form-control" id="place"
+                                            placeholder="Munkavégzés helye" required>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4 py-3">
                                     <div class="form-check">
-                                        <input type="radio" class="form-check-input" id="residentClient" name="clientType" required>
+                                        <input type="radio" class="form-check-input" id="residentClient"
+                                            name="clientType" required>
                                         <label for="residentClient" class="form-check-label ml-2">Lakossági</label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4 py-3">
                                     <div class="form-check">
-                                        <input type="radio" class="form-check-input" id="companyClient" name="clientType" required>
+                                        <input type="radio" class="form-check-input" id="companyClient"
+                                            name="clientType" required>
                                         <label for="companyClient" class="form-check-label ml-2">Céges</label>
                                     </div>
                                 </div>
@@ -609,26 +628,30 @@
                                 </div>
                                 <div class="col-6 col-xl-4">
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="earthWork" name="workType" checked>
+                                        <input type="checkbox" class="form-check-input" id="earthWork" name="workType">
                                         <label for="earthWork" class="form-check-label ml-2">Földmunka</label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-xl-4">
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="landscaping" name="workType">
+                                        <input type="checkbox" class="form-check-input" id="landscaping"
+                                            name="workType">
                                         <label for="landscaping" class="form-check-label ml-2">Tereprendezés</label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-xl-4">
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="ditchDigging" name="workType">
+                                        <input type="checkbox" class="form-check-input" id="ditchDigging"
+                                            name="workType">
                                         <label for="ditchDigging" class="form-check-label ml-2">Árokásás</label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-xl-4">
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="utilConstruct" name="workType">
-                                        <label for="utilConstruct" class="form-check-label ml-2">Közmű&nbsp;kiépítés</label>
+                                        <input type="checkbox" class="form-check-input" id="utilConstruct"
+                                            name="workType">
+                                        <label for="utilConstruct"
+                                            class="form-check-label ml-2">Közmű&nbsp;kiépítés</label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-xl-4">
@@ -639,7 +662,8 @@
                                 </div>
                                 <div class="col-12 mt-5">
                                     <div class="form-group">
-                                        <textarea name="message" id="message" class="form-control" placeholder="Üzenet"></textarea>
+                                        <textarea name="message" id="message" class="form-control"
+                                            placeholder="Üzenet"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 text-right">
@@ -656,22 +680,27 @@
 
     <footer class="beige">
         <div class="container-fluid">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center flex-md-row p-2">
+            <div class="container px-xl-0">
+                <div class="d-flex justify-content-between align-items-center flex-column flex-md-row py-2">
                     <div>
-                        <img src="./icons/logo.png" class="img-fluid" alt="logó">
+                        <img src="./icons/logo.png" class="img-fluid p-3 p-md-0" alt="logó">
                     </div>
-                    <div class="d-flex justify-content-around">
-                        <a href="/" class="black-text p-1">Földmunka</a>
-                        <a href="/generalkivitelezes" class="black-text p-1">Generálkivitelezés</a>
-                        <a href="#referencia" class="black-text p-1">Referencia</a>
-                        <a href="#kapcsolat" class="black-text p-1">Kapcsolat</a>
+                    <div class="d-flex justify-content-around flex-column flex-md-row py-2 text-lg-end">
+                        <a href="/" class="nav-link footer-nav-link black-text mx-2 my-md-3">Földmunka</a>
+                        <a href="/generalkivitelezes" class="nav-link footer-nav-link black-text mx-2 my-md-3">Generálkivitelezés</a>
+                        <a href="#referencia" class="nav-link footer-nav-link black-text mx-2 my-md-3">Referencia</a>
+                        <a href="#kapcsolat" class="nav-link footer-nav-link black-text ml-2 pr-md-0 my-md-3">Kapcsolat</a>
                     </div>
-                   
                 </div>
+                <hr class="my-0">
             </div>
-            <hr>
-            <p class="text-center">Copyright © 2023 Mikatherm Kft. Minden jog fenntartva</p>
+
+            <p class="text-center mt-4">Copyright © <span id="year"></span> Mikatherm Kft. Minden jog fenntartva</p>
+            <p class="text-center">
+                Az oldalt a
+                <a target="_blank" href="https://weboldalnet.hu/">weboldalnet.hu</a>
+                készítette <br> Weboldal készítés kompromisszumok nélkül.
+            </p>
         </div>
     </footer>
 

@@ -4,22 +4,38 @@
     og oldal: https://miskolcfoldmunka.hu/
 */
 
-const header = document.getElementById('header');
+const desktopNav = document.getElementById('desktop-nav');
 
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY > 0;
-    header.classList.toggle('bg-dark-blue', scrolled);
-    header.classList.toggle('light-shadow', scrolled);
-    header.classList.toggle('bg-transparent', !scrolled);
+    desktopNav.classList.toggle('bg-dark-blue', scrolled);
+    desktopNav.classList.toggle('light-shadow', scrolled);
+    desktopNav.classList.toggle('bg-transparent', !scrolled);
 });
 
-const toggler = document.getElementsByClassName("navbar-toggler")[0];
+const mobileToggler = document.getElementById('mobile-toggler');
+
+function closeNavbar() {
+    mobileToggler.click();
+}
+
+const togglers = document.getElementsByClassName('navbar-toggler');
 
 function openCloseToggler() {
-    const toggler = document.querySelector('.navbar-toggler');
-    
-    toggler.classList.toggle('closed');
-    toggler.classList.toggle('open');
+    for (toggler of togglers) {
+        toggler.classList.toggle('closed');
+        toggler.classList.toggle('open');
+    }
+}
+
+const sidebar = document.getElementById('sidebar');
+const darkMobileBg = document.getElementById('dark-mobile-bg');
+
+function toggleSidebar() {
+    openCloseToggler();
+
+    sidebar.classList.toggle('closed');
+    darkMobileBg.classList.toggle('invisible');
 }
 
 function changeColor(clickedButtonId, className, onColor, offColor) {
@@ -50,3 +66,4 @@ function stepWorkflow(step) {
     }, 600);
 }
 
+document.getElementById("year").innerHTML = new Date().getFullYear();
