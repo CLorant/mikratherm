@@ -35,7 +35,7 @@ function toggleSidebar() {
     openCloseToggler();
 
     sidebar.classList.toggle('closed');
-    darkMobileBg.classList.toggle('invisible');
+    darkMobileBg.classList.toggle('active');
 }
 
 function changeColor(clickedButtonId, className, onColor, offColor) {
@@ -67,3 +67,27 @@ function stepWorkflow(step) {
 }
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+function addAnimationOnScroll(elements) {
+    const animateElements = () => {
+        elements.forEach((element) => {
+            const bounding = element.getBoundingClientRect();
+
+            // Ignore right bounding due to right overflow use
+            if (
+                bounding.top >= 0 &&
+                bounding.left >= 0 &&
+                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            ) {
+                element.classList.remove('initially-hidden');
+                element.classList.add('animate', 'pop');
+            }
+        });
+    }
+
+    animateElements();
+    window.addEventListener('scroll', animateElements);
+}
+
+const initiallyHidden = document.querySelectorAll('.initially-hidden');
+addAnimationOnScroll(initiallyHidden);

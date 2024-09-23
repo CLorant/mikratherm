@@ -33,21 +33,33 @@
                 <a class="nav-link mobile-nav-link title brown-text" href="/" onclick="closeNavbar()">Főoldal</a>
             </li>
             <li class="nav-item py-2">
-                <a class="nav-link mobile-nav-link title brown-text" href="/generalkivitelezes" onclick="closeNavbar()">Generálkivitelezés</a>
+                <a class="nav-link mobile-nav-link title brown-text" href="/generalkivitelezes"
+                    onclick="closeNavbar()">Generálkivitelezés</a>
             </li>
             <li class="nav-item py-2">
-                <a class="nav-link mobile-nav-link title brown-text" href="#gallery" onclick="closeNavbar()">Referencia</a>
+                <a class="nav-link mobile-nav-link title brown-text" href="#gallery"
+                    onclick="closeNavbar()">Referencia</a>
             </li>
             <li class="nav-item py-2">
-                <a class="nav-link mobile-nav-link title brown-text" href="#contact" onclick="closeNavbar()">Kapcsolat</a>
+                <a class="nav-link mobile-nav-link title brown-text" href="#contact"
+                    onclick="closeNavbar()">Kapcsolat</a>
             </li>
         </ul>
         <h2>Sidebar Content</h2>
     </div>
-    <div id="dark-mobile-bg" class="invisible" onclick="closeNavbar()"></div>
+    <div id="dark-mobile-bg" onclick="closeNavbar()"></div>
     <header>
-        <nav id="mobile-nav" class="navbar bg-white">
-            <div class="container-fluid">
+        <div id="mobile-nav">
+            <nav class="navbar bg-whiteish light-shadow">
+                <a href="tel:+36202588888" class="contact-button call dark-brown">
+                    Hívás
+                </a>
+                <span class="brown-text">
+                    <i class="fa-solid fa-phone mr-2"></i>
+                    +36 20 258 8888
+                </span>
+            </nav>
+            <nav class="navbar bg-white light-shadow">
                 <a href="/">
                     <img src="./icons/logo.png" alt="logó" class="navbar-brand" width="128" height="64">
                 </a>
@@ -57,8 +69,8 @@
                     <span></span>
                     <span></span>
                 </button>
-            </div>
-        </nav>
+            </nav>
+        </div>
         <nav id="desktop-nav" class="navbar navbar-expand-lg">
             <div class="container container-fluid">
                 <a href="/">
@@ -151,8 +163,8 @@
                                 infrastruktúra építés, sávalap kiszedés vagy bonyolult, közművesített területen történő
                                 feltárás.
                             </p>
-                            <div class="pt-lg-3 initially-hidden">
-                                <a href="#contact" class="btn contact-button beige">Kapcsolat</a>
+                            <div class="pt-lg-3">
+                                <a href="#contact" class="btn contact-button beige initially-hidden">Kapcsolat</a>
                             </div>
                         </div>
                     </div>
@@ -184,7 +196,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-10 mb-2">
+                    <div class="col-lg-3 col-md-6 col-sm-10 col-8 mb-2 px-2">
                         <div class="advantages-card p-3 p-md-4 h-100">
                             <div class="mb-2">
                                 <img src="./icons/calendar.svg" alt="naptár">
@@ -195,7 +207,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-10 mb-2">
+                    <div class="col-lg-3 col-md-6 col-sm-10 col-8 mb-2 px-2">
                         <div class="advantages-card p-3 p-md-4 h-100">
                             <div class="mb-2">
                                 <img src="./icons/hard-hat.svg" alt="keménykalap">
@@ -208,7 +220,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-10 mb-2 ">
+                    <div class="col-lg-3 col-md-6 col-sm-10 col-8 mb-2 px-2">
                         <div class="advantages-card p-3 p-md-4 h-100">
                             <div class="mb-2">
                                 <img src="./icons/people.svg" alt="emberek">
@@ -344,8 +356,8 @@
                                             <p>Gépi földmunka Miskolcon</p>
                                             <p>már <b>9 490 Ft-tól</b></p>
                                         </div>
-                                        <div class="initially-hidden">
-                                            <a href="#contact" class="btn contact-button brown">Kapcsolat</a>
+                                        <div>
+                                            <a href="#contact" class="btn contact-button brown initially-hidden">Kapcsolat</a>
                                         </div>
                                     </div>
                                 </div>
@@ -372,8 +384,8 @@
                                             <p>Gépi földmunka Miskolcon</p>
                                             <p>már <b>9 490 Ft-tól</b></p>
                                         </div>
-                                        <div class="initially-hidden">
-                                            <a href="#contact" class="btn contact-button brown">Kapcsolat</a>
+                                        <div>
+                                            <a href="#contact" class="btn contact-button brown initially-hidden">Kapcsolat</a>
                                         </div>
                                     </div>
                                 </div>
@@ -421,15 +433,15 @@
 
                 <div class="bg-dark-blue-gradient text-center text-white">
                     <div class="row p-3 p-lg-5">
-                        <div class="col-4 col-md-12">
+                        <div class="col-md-4">
                             <h2>5 év</h2>
                             <p>szakmai tapasztalat</p>
                         </div>
-                        <div class="col-4 col-md-12">
+                        <div class="col-md-4">
                             <h2>600 milliós</h2>
                             <p>árbevétel</p>
                         </div>
-                        <div class="col-4 col-md-12">
+                        <div class="col-md-4">
                             <h2>40</h2>
                             <p>elégedett ügyfél</p>
                         </div>
@@ -448,16 +460,16 @@
                     Hogyan dolgozunk?
                 </h2>
                 <div class="d-flex justify-content-start justify-content-md-center mb-2 mb-lg-5 overflow-auto">
-                    <button id="workflow-0" class="workflow-btn dark-brown" onclick="changeWorkflow(this.id)" value="0"
+                    <button id="workflow-0" class="workflow-btn dark-brown initially-hidden" onclick="changeWorkflow(this.id)" value="0"
                         data-target="#workflowCarousel" data-slide-to="0" aria-current="true" aria-label="Slide 1"
                         type="button">
                         1.&nbsp;Kapcsolatfelvétel
                     </button>
-                    <button id="workflow-1" class="workflow-btn white" onclick="changeWorkflow(this.id)" value="1"
+                    <button id="workflow-1" class="workflow-btn white initially-hidden" onclick="changeWorkflow(this.id)" value="1"
                         data-target="#workflowCarousel" data-slide-to="1" aria-label="Slide 2" type="button">
                         2.&nbsp;Árajánlat&nbsp;küldése
                     </button>
-                    <button id="workflow-2" class="workflow-btn white" onclick="changeWorkflow(this.id)" value="2"
+                    <button id="workflow-2" class="workflow-btn white initially-hidden" onclick="changeWorkflow(this.id)" value="2"
                         data-target="#workflowCarousel" data-slide-to="2" aria-label="Slide 3" type="button">
                         3.&nbsp;Munka&nbsp;megkezdése
                     </button>
@@ -534,26 +546,26 @@
         </section>
 
         <section id="gallery" class="px-5">
-            <div class="container container-fluid">
+            <div class="container-fluid">
                 <div class="row gallery-container">
                     <div class="col-10 col-md-5 col-lg-3">
-                        <img src="./image/carousel/gallery/slider-1.png" class="img-fluid h-100 gallery-img"
+                        <img src="./image/carousel/gallery/slider-1.png" class="img-fluid w-100 h-100 gallery-img"
                             alt="slider-1">
                     </div>
                     <div class="col-10 col-md-5 col-lg-3">
-                        <img src="./image/carousel/gallery/slider-2.png" class="img-fluid h-100 gallery-img"
+                        <img src="./image/carousel/gallery/slider-2.png" class="img-fluid w-100 h-100 gallery-img"
                             alt="slider-2">
                     </div>
                     <div class="col-10 col-md-5 col-lg-3">
-                        <img src="./image/carousel/gallery/slider-3.png" class="img-fluid h-100 gallery-img"
+                        <img src="./image/carousel/gallery/slider-3.png" class="img-fluid w-100 h-100 gallery-img"
                             alt="slider-3">
                     </div>
                     <div class="col-10 col-md-5 col-lg-3">
-                        <img src="./image/carousel/gallery/slider-4.png" class="img-fluid h-100 gallery-img"
+                        <img src="./image/carousel/gallery/slider-4.png" class="img-fluid w-100 h-100 gallery-img"
                             alt="slider-4">
                     </div>
                     <div class="col-10 col-md-5 col-lg-3">
-                        <img src="./image/carousel/gallery/slider-4.png" class="img-fluid h-100 gallery-img"
+                        <img src="./image/carousel/gallery/slider-4.png" class="img-fluid w-100 h-100 gallery-img"
                             alt="slider-4">
                     </div>
                 </div>
@@ -667,7 +679,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 text-right">
-                                    <button class="btn contact-button beige">Ajánlatkérés</button>
+                                    <button class="btn contact-button beige initially-hidden">Ajánlatkérés</button>
                                 </div>
                             </div>
                         </form>
@@ -687,18 +699,34 @@
                     </div>
                     <div class="d-flex justify-content-around flex-column flex-md-row py-2 text-lg-end">
                         <a href="/" class="nav-link footer-nav-link black-text mx-2 my-md-3">Földmunka</a>
-                        <a href="/generalkivitelezes" class="nav-link footer-nav-link black-text mx-2 my-md-3">Generálkivitelezés</a>
-                        <a href="#referencia" class="nav-link footer-nav-link black-text mx-2 my-md-3">Referencia</a>
-                        <a href="#kapcsolat" class="nav-link footer-nav-link black-text ml-2 pr-md-0 my-md-3">Kapcsolat</a>
+                        <a href="/generalkivitelezes"
+                            class="nav-link footer-nav-link black-text mx-2 my-md-3">Generálkivitelezés</a>
+                        <a href="#gallery" class="nav-link footer-nav-link black-text mx-2 my-md-3">Referencia</a>
+                        <a href="#kapcsolat"
+                            class="nav-link footer-nav-link black-text ml-2 pr-md-0 my-md-3">Kapcsolat</a>
                     </div>
                 </div>
-                <hr class="my-0">
+                <div class="d-none d-md-flex align-items-center justify-content-center flex-wrap">
+                    <a href="tel:+36202588888" class="mb-1 mb-lg-2 py-1 p-md-1 mr-5 black-text initially-hidden">
+                        <i class="fa-solid fa-phone mr-1 brown-text"></i>
+                        Krajnyik Bence +36 20 258 88 88
+                    </a>
+                    <a href="mailto:bence.krajnyik@gmail.com" class="mb-1 mb-lg-2 py-1 p-md-1 mr-5 black-text initially-hidden">
+                        <i class="fa-solid fa-envelope mr-1 brown-text"></i>
+                        E-mail: bence.krajnyik@gmail.com
+                    </a>
+                    <a href="https://www.google.com/maps/place/Fels%C5%91zsolca,+Ipari+%C3%BAt+3,+3561/@48.1221933,20.8571236,17z/data=!3m1!4b1!4m6!3m5!1s0x473f5fa3590d4387:0xb5732d053a271a6b!8m2!3d48.1221897!4d20.8596985!16s%2Fg%2F11csmm5jr6?entry=ttu"
+                        target="_blank" class="mb-1 mb-lg-2 py-1 p-md-1 black-text initially-hidden">
+                        <i class="fa-solid fa-map-pin mr-1 brown-text"></i> Felsőzsolca, Ipari út 3.
+                    </a>
+                </div>
+                <hr class="my-lg-4">
             </div>
-
+           
             <p class="text-center mt-4">Copyright © <span id="year"></span> Mikatherm Kft. Minden jog fenntartva</p>
             <p class="text-center">
                 Az oldalt a
-                <a target="_blank" href="https://weboldalnet.hu/">weboldalnet.hu</a>
+                <a target="_blank" href="https://weboldalnet.hu/" class="black-text">weboldalnet.hu</a>
                 készítette <br> Weboldal készítés kompromisszumok nélkül.
             </p>
         </div>
