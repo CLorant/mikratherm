@@ -74,11 +74,11 @@ function addAnimationOnScroll(elements) {
             const bounding = element.getBoundingClientRect();
 
             // Ignore right bounding due to right overflow use
-            if (
-                bounding.top >= 0 &&
-                bounding.left >= 0 &&
-                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-            ) {
+            const topMatches =  bounding.top >= 0;
+            const leftMatches = bounding.left >= 0;
+            const bottomMatches = bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+
+            if (topMatches && leftMatches && bottomMatches) {
                 element.classList.remove('initially-hidden');
                 element.classList.add('animate', 'pop');
             }
@@ -91,3 +91,5 @@ function addAnimationOnScroll(elements) {
 
 const initiallyHidden = document.querySelectorAll('.initially-hidden');
 addAnimationOnScroll(initiallyHidden);
+
+baguetteBox.run('#gallery');

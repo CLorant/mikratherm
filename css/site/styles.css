@@ -176,6 +176,10 @@ p {
     padding: 8px 16px;
 }
 
+.contact-button.dark-brown:hover {
+    color: var(--color-primary);
+}
+
 .nav-link {
     font-weight: 600;
 }
@@ -409,14 +413,27 @@ header {
     overflow-x: scroll;
 }
 
+.machine-img-container {
+    z-index: 1;
+    margin-bottom: -16px;
+}
+
 .machine-img {
     aspect-ratio: 2/1;
     object-fit: cover;
 }
 
+.machine-description {
+    min-height: 550px;
+}
+
 #about img {
     aspect-ratio: 1.35;
     object-fit: cover;
+}
+
+.workflow-container {
+    min-height: 400px;
 }
 
 .workflow-btn {
@@ -516,6 +533,14 @@ input[type="checkbox"]:checked {
     .floating-img {
         bottom: -20px;
         right: -20px;
+    }
+
+    .machine-description {
+        min-height: 400px;
+    }
+
+    .workflow-container {
+        min-height: 350px;
     }
 }
 
